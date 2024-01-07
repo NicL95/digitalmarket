@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+   
+    text-align: center;
+}
+
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff79;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #3232E5;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.logo {
+    position: flex;
+    left: 550px;
+    top: 210px;
+}
+
+.logo img:hover {
+    box-shadow: 0 0 20px #fff;
+    transform: scale(1.05);
+}
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 20px 10px;
+    text-align: center;
+}
