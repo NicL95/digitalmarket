@@ -50,7 +50,30 @@ section.especialidades .flex{
 }
 
 footer{
-    padding: 60px 4%;
+    padding: 50px;
     box-shadow: 0 0 20px 10px;
     text-align: center;
+}
+
+.redes button{
+    border-color: #3232E5;
+    border-radius: 20px;
+}
+
+.redes i{
+    padding: 20px;
+    font-size: 40px;
+    color: #3232E5;
+}
+
+.redes .insta {
+    color: #C13584;
+}
+
+.redes .wsp {
+    color: #25D366;
+}
+
+.redes .mail {
+    color: #0097FF;
 }
