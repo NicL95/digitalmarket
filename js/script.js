@@ -1,24 +1,28 @@
-//  aqui eu criei para a palavra "website" do sobre ficar escrevendo sozinho
-var typingeffect = new Typed(".digitando", {
-        strings: ["PROYECTO O EMPRESA."],
-        loop: true,
-        typeSpeed: 150,
-        backSpeed: 100,
-        backDelay: 1500,
+const carrusel = document.querySelector(".carrusel-items");
+
+let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
+let intervalo = null;
+let step = 1;
+const start = () => {
+    intervalo = setInterval(function () {
+        carrusel.scrollLeft = carrusel.scrollLeft + step;
+        if (carrusel.scrollLeft === maxScrollLeft) {
+            step = -1;
+        } else if (carrusel.scrollLeft === 0) {
+            step = step * -1;
+        }
+    }, 10);
+};
+
+const stop = () => {
+    clearInterval(intervalo);
+};
+
+carrusel.addEventListener('mouseover', () => {
+    stop ();
+});
+carrusel.addEventListener('mouseout', () => {
+    start ();
 });
 
-let btnMenu = document.getElementById('btn-menu')
-let menu = document.getElementById('menu-mobile')
-let overlay = document.getElementById('overlay-menu')
-
-btnMenu.addEventListener('click', ()=>{
-    menu.classList.add('abrir-menu')
-})
-
-menu.addEventListener('click', ()=>{
-    menu.classList.remove('abrir-menu')
-})
-
-overlay.addEventListener('click', ()=>{
-    menu.classList.remove('abrir-menu')
-})--
+start();
