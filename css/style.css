@@ -36,7 +36,7 @@ body {
     transform: scale(1.2);
 }
 
-/* productos */
+/* --productos-- */
 
 .container-productos{
     width: 100%;
@@ -68,7 +68,7 @@ body {
 .container-productos .card img{
     width: 260px;
     height: 190px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .container-productos .card a{
     padding: 10px;
@@ -77,10 +77,10 @@ body {
     margin: 0 auto;
 }
 
-/* fin productos */
+/* --fin productos-- */
 
 section.especialidades{
-    padding: 40px 4%;
+    padding: 80px 4%;
 }
 
 section.especialidades .flex{
@@ -88,15 +88,16 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box{
-    padding: 40px;
+    width: 200px;
+    padding: 10px;
     margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
 }
 
 .especialidades .especialidades-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #ffffff79;
+    transform: scale(1.15);
+    box-shadow: 0 10px 30px #111;
 }
 
 .especialidades .especialidades-box i{
