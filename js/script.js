@@ -42,3 +42,7 @@ for(let i = 0; i<imagenes.length;i++){
 boton.addEventListener('click',function(){
     modal.classList.toggle("modal-open");
 });
+
+$(function(){
+    $("#includedContent").load("nav.html"); 
+  });
